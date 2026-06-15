@@ -1,0 +1,10 @@
+# Keep the Docker build context small and clean.
+venv/
+.venv/
+.git/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.streamlit/secrets.toml.example
+repl_outputs/
+.DS_Store

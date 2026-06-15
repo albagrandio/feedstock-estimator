@@ -140,14 +140,20 @@ def get_pipeline(country: str, module: str) -> Callable[[PipelineInput], Pipelin
         from src.pipelines.nr_spain import run_pipeline
         return run_pipeline
 
+    if country == COUNTRY_SPAIN and module == MODULE_HECTARES:
+        from src.pipelines.hectares_spain import run_pipeline
+        return run_pipeline
+
+    # Feedstock availability (both countries) reuses the postgres feedstock path.
+    if module == MODULE_FEEDSTOCK:
+        from src.pipelines.feedstock import run_pipeline
+        return run_pipeline
+
     # Everything else is stubbed for this first slice.
     from src.pipelines import stubs
 
     registry: Dict[tuple, Callable] = {
-        (COUNTRY_SPAIN, MODULE_FEEDSTOCK): stubs.feedstock_spain,
-        (COUNTRY_SPAIN, MODULE_HECTARES): stubs.hectares_spain,
         (COUNTRY_SPAIN, MODULE_CR): stubs.cr_spain,
-        (COUNTRY_ITALY, MODULE_FEEDSTOCK): stubs.feedstock_italy,
         (COUNTRY_ITALY, MODULE_HECTARES): stubs.hectares_italy,
         (COUNTRY_ITALY, MODULE_CR): stubs.cr_italy,
         (COUNTRY_ITALY, MODULE_NR): stubs.nr_italy,
