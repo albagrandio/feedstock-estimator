@@ -1,0 +1,613 @@
+countries:
+  spain:
+    default_latitude: 40.4168    # Latitude of Madrid
+    default_longitude: -3.7038   # Longitude of Madrid
+    level_1_geo: "CCAA"
+    level_2_geo: "PROV"
+    level_4_geo: "MUNI"
+    dataset_columns:
+      crops:
+        - "White Wheat (ktn)"
+        - "Durum Wheat (ktn)"
+        - "Barley (ktn)"
+        - "Rye (ktn)"
+        - "Oatmeal (ktn)"
+        - "Corn (ktn)"
+        - "Rice (ktn)"
+        - "Wheat/Rye (ktn)"
+        - "Sorgo Grain (ktn)"
+        - "Cotton (ktn)"
+        - "Tobacco (ktn)"
+      pigs:
+        - "Suma de PORCINOS_Iber (ktn)"
+        - "Suma de PORCINOS_NonIber (ktn)"
+        - "POR_madrep_slurry_Iber (ktn)"
+        - "POR_lech<20kg_slurry_Iber (ktn)"
+        - "POR_otr_slurry_Iber (ktn)"
+        - "POR_madrep_slurry_NonIber (ktn)"
+        - "POR_lech<20kg_slurry_NonIber (ktn)"
+        - "POR_otr_slurry_NonIber (ktn)"
+      pigs_heads:
+        - "POR_madrep_slurry_Iber (no. heads)"
+        - "POR_lech<20kg_slurry_Iber (no. heads)"
+        - "POR_otr_slurry_Iber (no. heads)"
+        - "POR_madrep_slurry_NonIber (no. heads)"
+        - "POR_lech<20kg_slurry_NonIber (no. heads)"
+        - "POR_otr_slurry_NonIber (no. heads)"
+      cows:
+        - "Total Cow Slurry (kTon)"
+        - "BO_Ma_>24m (ktn)"
+        - "BO_No_>24m (ktn)"
+        - "BO_Ma_<12m (ktn)"
+        - "BO_Ma_12-24m (ktn)"
+        - "BO_Va_nomad (ktn)"
+        - "BO_Va_lech (ktn)"
+        - "BO_Va_otr (ktn)"
+        - "BO_BU_otr (ktn)"
+      cows_heads:
+        - "Total Cow Slurry (no. heads)"
+        - "BO_Ma_>24m (no. heads)"
+        - "BO_No_>24m (no. heads)"
+        - "BO_Va_lech (no. heads)"
+        - "Total Cow Manure (no. heads)"
+        - "BO_Va_otr (no. heads)"
+        - "BO_Ma_12-24m (no. heads)"
+        - "BO_Ma_<12m (no. heads)"
+        - "BO_BU_otr (no. heads)"
+        - "BO_Va_nomad (no. heads)"
+      sheep:
+        - "Total Sheep & Goats Manure (kTon)"
+        - "OV_madrep (ktn)"
+        - "OV_otr (ktn)"
+        - "CAP_madrep (ktn)"
+        - "CAP_otr (ktn)"
+      sheep_heads:
+        - "Total Sheep & Goats (no. heads)"
+        - "OV_madrep (no. heads)"
+        - "OV_otr (no. heads)"
+        - "CAP_madrep (no. heads)"
+        - "CAP_otr (no. heads)"
+      poultry:
+        - "Suma de AVES (ktn)"
+        - "AVES_poned (ktn)"
+        - "AVES_broiler (ktn)"
+        - "AVES_pavos (ktn)"
+        - "AVES_patos (ktn)"
+        - "AVES_ocas (ktn)"
+        - "AVES_avest (ktn)"
+        - "AVES_otr (ktn)"
+      poultry_heads:
+        - "Suma de AVES (no. heads)"
+        - "AVES_poned (no. heads)"
+        - "AVES_broiler (no. heads)"
+        - "AVES_pavos (no. heads)"
+        - "AVES_patos (no. heads)"
+        - "AVES_ocas (no. heads)"
+        - "AVES_avest (no. heads)"
+        - "AVES_otr (no. heads)"
+      heads_feedstock:
+        - "Total Cow Slurry (kTon)"
+        - "BO_Ma_>24m (ktn)"
+        - "BO_No_>24m (ktn)"
+        - "BO_Va_lech (ktn)"
+        - "Total Cow Manure (kTon)"
+        - "BO_Va_otr (ktn)"
+        - "BO_Ma_12-24m (ktn)"
+        - "BO_Ma_<12m (ktn)"
+        - "BO_BU_otr (ktn)"
+        - "BO_Va_nomad (ktn)"
+        - "Suma de PORCINOS_Iber (ktn)"
+        - "POR_madrep_slurry_Iber (ktn)"
+        - "POR_lech<20kg_slurry_Iber (ktn)"
+        - "POR_otr_slurry_Iber (ktn)"
+        - "Suma de PORCINOS_NonIber (ktn)"
+        - "POR_madrep_slurry_NonIber (ktn)"
+        - "POR_lech<20kg_slurry_NonIber (ktn)"
+        - "POR_otr_slurry_NonIber (ktn)"
+        - "CON_TOT (ktn)"
+        - "HORSE_man (ktn)"
+        - "Total Sheep & Goats Manure (kTon)"
+        - "OV_madrep (ktn)"
+        - "OV_otr (ktn)"
+        - "CAP_madrep (ktn)"
+        - "CAP_otr (ktn)"
+        - "Suma de AVES (ktn)"
+        - "AVES_poned (ktn)"
+        - "AVES_broiler (ktn)"
+        - "AVES_pavos (ktn)"
+        - "AVES_patos (ktn)"
+        - "AVES_ocas (ktn)"
+        - "AVES_avest (ktn)"
+        - "AVES_otr (ktn)"
+      bolded_totals:
+        - "Total Crops (kTon)"
+        - "Total Cow Slurry (kTon)"
+        - "Total Cow Manure (kTon)"
+        - "Suma de PORCINOS_Iber (ktn)"
+        - "Suma de PORCINOS_NonIber (ktn)"
+        - "CON_TOT (ktn)"
+        - "Total Sheep & Goats Manure (kTon)"
+        - "Suma de AVES (ktn)"
+
+      totals:
+        - "White Wheat (ktn)"
+        - "Durum Wheat (ktn)"
+        - "Barley (ktn)"
+        - "Rye (ktn)"
+        - "Oatmeal (ktn)"
+        - "Corn (ktn)"
+        - "Rice (ktn)"
+        - "Wheat/Rye (ktn)"
+        - "Sorgo Grain (ktn)"
+        - "Cotton (ktn)"
+        - "Tobacco (ktn)"
+        - "BO_Ma_>24m (ktn)"
+        - "BO_No_>24m (ktn)"
+        - "BO_Va_lech (ktn)"
+        - "BO_Va_otr (ktn)"
+        - "BO_Ma_12-24m (ktn)"
+        - "BO_Ma_<12m (ktn)"
+        - "BO_BU_otr (ktn)"
+        - "BO_Va_nomad (ktn)"
+        - "POR_madrep_slurry_Iber (ktn)"
+        - "POR_lech<20kg_slurry_Iber (ktn)"
+        - "POR_otr_slurry_Iber (ktn)"
+        - "POR_madrep_slurry_NonIber (ktn)"
+        - "POR_lech<20kg_slurry_NonIber (ktn)"
+        - "POR_otr_slurry_NonIber (ktn)"
+        - "HORSE_man (ktn)"
+        - "OV_madrep (ktn)"
+        - "OV_otr (ktn)"
+        - "CAP_madrep (ktn)"
+        - "CAP_otr (ktn)"
+        - "AVES_poned (ktn)"
+        - "AVES_broiler (ktn)"
+        - "AVES_pavos (ktn)"
+        - "AVES_patos (ktn)"
+        - "AVES_ocas (ktn)"
+        - "AVES_avest (ktn)"
+        - "AVES_otr (ktn)"
+
+      heads:
+        - "BO_Ma_>24m (no. heads)"
+        - "BO_No_>24m (no. heads)"
+        - "BO_Va_lech (no. heads)"
+        - "BO_Va_otr (no. heads)"
+        - "BO_Ma_12-24m (no. heads)"
+        - "BO_Ma_<12m (no. heads)"
+        - "BO_BU_otr (no. heads)"
+        - "BO_Va_nomad (no. heads)"
+        - "POR_madrep_slurry_Iber (no. heads)"
+        - "POR_lech<20kg_slurry_Iber (no. heads)"
+        - "POR_otr_slurry_Iber (no. heads)"
+        - "POR_madrep_slurry_NonIber (no. heads)"
+        - "POR_lech<20kg_slurry_NonIber (no. heads)"
+        - "POR_otr_slurry_NonIber (no. heads)"
+        - "CON_TOT (no. heads)"
+        - "HORSE_man (no. heads)"
+        - "OV_madrep (no. heads)"
+        - "OV_otr (no. heads)"
+        - "CAP_madrep (no. heads)"
+        - "CAP_otr (no. heads)"
+        - "AVES_poned (no. heads)"
+        - "AVES_broiler (no. heads)"
+        - "AVES_pavos (no. heads)"
+        - "AVES_patos (no. heads)"
+        - "AVES_ocas (no. heads)"
+        - "AVES_avest (no. heads)"
+        - "AVES_otr (no. heads)"
+
+      TONNAGECOWSLURRY:
+        - "BO_Va_lech"
+        - "BO_Ma_>24m"
+        - "BO_No_>24m"
+      TONNAGECOWMANURE:
+        - "BO_Va_otr"
+        - "BO_Ma_12-24m"
+        - "BO_Ma_<12m"
+        - "BO_BU_otr"
+        - "BO_Va_nomad"
+      SHEEPGOATMANURE:
+        - "OV_madrep"
+        - "OV_otr"
+        - "CAP_madrep"
+        - "CAP_otr"
+      FINALTONNAGECOLS:
+        "Total Crops (ktn)": "Total Crops"
+        "White Wheat (ktn)": "White Wheat"
+        "Durum Wheat (ktn)": "Durum Wheat"
+        "Barley (ktn)": "Barley"
+        "Rye (ktn)": "Rye"
+        "Oatmeal (ktn)": "Oatmeal"
+        "Corn (ktn)": "Corn"
+        "Rice (ktn)": "Rice"
+        "Wheat/Rye (ktn)": "Wheat/Rye"
+        "Sorgo Grain (ktn)": "Sorgo Grain"
+        "Cotton (ktn)": "Cotton"
+        "Tobacco (ktn)": "Tobacco"
+        "Total Cow Slurry (kTon)": "Total Cow Slurry"
+        "BO_Ma_>24m (ktn)": "Male bovines >24 months"
+        "BO_No_>24m (ktn)": "Heifers two years or older without calving"
+        "BO_Va_lech (ktn)": "Dairy Cows"
+        "Total Cow Manure (kTon)": "Total Cow Manure"
+        "BO_Va_otr (ktn)": "Other cows"
+        "BO_Ma_12-24m (ktn)": "Bovines between 1-2 years"
+        "BO_Ma_<12m (ktn)": "Bovines less than 1 year"
+        "BO_BU_otr (ktn)": "Buffaloes"
+        "BO_Va_nomad (ktn)": "Heifers 1-2 years without calving"
+        "Suma de PORCINOS_Iber (ktn)": "Total Iberican Pigs"
+        "POR_madrep_slurry_Iber (ktn)": "Iberian Sow Slurry"
+        "POR_lech<20kg_slurry_Iber (ktn)": "Iberian piglets <20kg Slurry"
+        "POR_otr_slurry_Iber (ktn)": "Other Iberian pigs Slurry"
+        "Suma de PORCINOS_NonIber (ktn)": "Total Non-Iberian Pigs"
+        "POR_madrep_slurry_NonIber (ktn)": "Non-Iberian Sow Slurry"
+        "POR_lech<20kg_slurry_NonIber (ktn)": "Non-Iberian piglets <20kg Slurry"
+        "POR_otr_slurry_NonIber (ktn)": "Other Non-Iberian pigs Slurry"
+        "CON_TOT (ktn)": "Total breeding does"
+        "HORSE_man (ktn)": "Horses"
+        "Total Sheep & Goats Manure (kTon)": "Total Sheep & Goats Manure"
+        "OV_madrep (ktn)": "Ewes and replacement lambs"
+        "OV_otr (ktn)": "Other sheep"
+        "CAP_madrep (ktn)": "Goats"
+        "CAP_otr (ktn)": "Other goats"
+        "Suma de AVES (ktn)": "Total Poultry"
+        "AVES_poned (ktn)": "Laying hens"
+        "AVES_broiler (ktn)": "Broilers"
+        "AVES_pavos (ktn)": "Turkeys"
+        "AVES_patos (ktn)": "Ducks"
+        "AVES_ocas (ktn)": "Geese"
+        "AVES_avest (ktn)": "Ostriches"
+        "AVES_otr (ktn)": "Other poultry"
+
+      FINALHEADSCOLS:
+        - "Total Cow Slurry (no. heads)"
+        - "BO_Ma_>24m (no. heads)"
+        - "BO_No_>24m (no. heads)"
+        - "BO_Va_lech (no. heads)"
+        - "Total Cow Manure (no. heads)"
+        - "BO_Va_otr (no. heads)"
+        - "BO_Ma_12-24m (no. heads)"
+        - "BO_Ma_<12m (no. heads)"
+        - "BO_BU_otr (no. heads)"
+        - "BO_Va_nomad (no. heads)"
+        - "Suma de PORCINOS_Iber (no. heads)"
+        - "POR_madrep_slurry_Iber (no. heads)"
+        - "POR_lech<20kg_slurry_Iber (no. heads)"
+        - "POR_otr_slurry_Iber (no. heads)"
+        - "Suma de PORCINOS_NonIber (no. heads)"
+        - "POR_madrep_slurry_NonIber (no. heads)"
+        - "POR_lech<20kg_slurry_NonIber (no. heads)"
+        - "POR_otr_slurry_NonIber (no. heads)"
+        - "CON_TOT (no. heads)"
+        - "HORSE_man (no. heads)"
+        - "Total Sheep & Goats (no. heads)"
+        - "OV_madrep (no. heads)"
+        - "OV_otr (no. heads)"
+        - "CAP_madrep (no. heads)"
+        - "CAP_otr (no. heads)"
+        - "Suma de AVES (no. heads)"
+        - "AVES_poned (no. heads)"
+        - "AVES_broiler (no. heads)"
+        - "AVES_pavos (no. heads)"
+        - "AVES_patos (no. heads)"
+        - "AVES_ocas (no. heads)"
+        - "AVES_avest (no. heads)"
+        - "AVES_otr (no. heads)"
+
+
+
+  italy:
+    default_latitude: 41.9028    # Latitude of Rome
+    default_longitude: 12.4964   # Longitude of Rome
+
+    dataset_columns:
+      crops:
+        - 'cereals for the production of grain (ktn)'
+        - 'dried legumes (ktn)'
+        - 'potato (ktn)'
+        - 'sugar beet (ktn)'
+        - 'forage root crops (ktn)'
+        - 'industrial plants (ktn)'
+        - 'vegetables (ktn)'
+        - 'flowers and ornamental plants (ktn)'
+        - 'seedlings (ktn)'
+        - 'alternate forage (ktn)'
+        - 'seeds (ktn)'
+        - 'fallow land (ktn)'
+        - 'agricultural woody crops (ktn)'
+        - 'vines/grapevines (ktn)'
+        - 'olive trees (ktn)'
+        - 'citrus fruits (ktn)'
+        - 'fruit-bearing (ktn)'
+        - 'nurseries (ktn)'
+        - 'other agricultural woody crops (ktn)'
+        - 'agricultural woody crops in greenhouses (ktn)'
+        - 'family gardens (ktn)'
+        - 'permanent meadows and pastures (ktn)'
+        - 'arboriculture for wood attached to agricultural companies (ktn)'
+        - 'woods annexed to agricultural companies (ktn)'
+        - 'unused agricultural area (ktn)'
+        - 'other surface (ktn)'
+        - 'mushrooms in caves, underground or in special buildings (ktn)'
+        - 'greenhouses (ktn)'
+        - 'energy crops (ktn)'
+
+      cows:
+        - 'cattle under one year old (ktn)'
+        - 'cattle under one year old: males (ktn)'
+        - 'cattle under one year old: females (ktn)'
+        - 'Cattle from one year to less than two years old: males (ktn)'
+        - 'Cattle from one year to less than two years old: females (ktn)'
+        - 'cattle two years old and older (ktn)'
+        - 'Cattle two years and older: males (ktn)'
+        - 'Cattle two years and older: females (ktn)'
+        - 'Cattle two years and older: breeding heifers (ktn)'
+        - 'Cattle two years and older: heifers for slaughter (ktn)'
+        - 'Cattle two years and older: dairy cows (ktn)'
+        - 'Cattle aged 2 years and over: other cows (beef and/or working) (ktn)'
+
+      cows_heads:
+        - 'cattle under one year old: males_(no. heads)'
+        - 'cattle under one year old: females_(no. heads)'
+        - 'Cattle from one year to less than two years old: males_(no. heads)'
+        - 'Cattle from one year to less than two years old: females_(no. heads)'
+        - 'Cattle two years and older: males_(no. heads)'
+        - 'Cattle two years and older: females_(no. heads)'
+        - 'Cattle two years and older: breeding heifers_(no. heads)'
+        - 'Cattle two years and older: heifers for slaughter_(no. heads)'
+        - 'Cattle two years and older: dairy cows_(no. heads)'
+        - 'Cattle aged 2 years and over: other cows (beef and/or working)_(no. heads)'
+
+      sheep:
+        - 'sheep (ktn)'
+        - 'dairy sheep (ktn)'
+        - 'non dairy sheep (ktn)'
+        - 'other sheep (ktn)'
+
+
+      sheep_heads:
+        - 'sheep_(no. heads)'
+        - 'dairy sheep_(no. heads)'
+        - 'non dairy sheep_(no. heads)'
+
+      heads_feedstock:
+        - 'cattle under one year old (ktn)'
+        - 'cattle under one year old: males (ktn)'
+        - 'cattle under one year old: females (ktn)'
+        - 'Cattle from one year to less than two years old: males (ktn)'
+        - 'Cattle from one year to less than two years old: females (ktn)'
+        - 'cattle two years old and older (ktn)'
+        - 'Cattle two years and older: males (ktn)'
+        - 'Cattle two years and older: females (ktn)'
+        - 'Cattle two years and older: breeding heifers (ktn)'
+        - 'Cattle two years and older: heifers for slaughter (ktn)'
+        - 'Cattle two years and older: dairy cows (ktn)'
+        - 'Cattle aged 2 years and over: other cows (beef and/or working) (ktn)'
+        - 'sheep (ktn)'
+        - 'dairy sheep (ktn)'
+        - 'non dairy sheep (ktn)'
+        - 'other sheep (ktn)'
+        - 'total buffaloes (ktn)'
+        - 'buffalo calves (ktn)'
+        - 'bufalloes (ktn)'
+        - 'other buffaloes (ktn)'
+        - 'goats (ktn)'
+        - 'other goats (ktn)'
+        - 'chickens for meat (ktn)'
+        - 'egg-laying hens (ktn)'
+        - 'turkeys (ktn)'
+        - 'pharaoh (ktn)'
+        - 'geese (ktn)'
+        - 'other poultry (ktn)'
+        - 'ostriches (ktn)'
+        - 'pigs weighing less than 20 kg (ktn)'
+        - 'pigs from 20 kg to less than 50 kg (ktn)'
+        - 'fattening pigs of 50 kg and more (ktn)'
+        - 'fattening pigs from 50 kg to less than 80 kg (ktn)'
+        - 'fattening pigs from 80 kg to less than 110 kg (ktn)'
+        - 'fattening pigs of 110 kg and more (ktn)'
+        - 'breeding pigs of 50 kg and more (ktn)'
+        - 'breeding pigs of 50 kg and more: boars (ktn)'
+        - 'breeding pigs of 50 kg and more: mounted sows (ktn)'
+        - 'breeding pigs of 50 kg and more: other sows (ktn)'
+
+
+
+      poultry:
+        - 'chickens for meat (ktn)'
+        - 'egg-laying hens (ktn)'
+        - 'turkeys (ktn)'
+        - 'pharaoh (ktn)'
+        - 'geese (ktn)'
+        - 'other poultry (ktn)'
+        - 'ostriches (ktn)'
+
+      poultry_heads:
+        - 'chickens for meat_(no. heads)'
+        - 'egg-laying hens_(no. heads)'
+        - 'turkeys_(no. heads)'
+        - 'pharaoh_(no. heads)'
+        - 'geese_(no. heads)'
+        - 'other poultry_(no. heads)'
+        - 'ostriches_(no. heads)'
+
+      TONNAGECOWSLURRY:
+        - "cattle two years old and older"
+        - 'Cattle two years and older: dairy cows'
+
+      TONNAGECOWMANURE:
+        - 'Cattle aged 2 years and over: other cows (beef and/or working)'
+        - 'cattle from one to less than two years old'
+        - "cattle under one year old"
+        - 'bufalloes'
+      SHEEPGOATMANURE:
+        - 'goats (ktn)'
+        - 'other goats (ktn)'
+      FINALTONNAGECOLS:
+        'Total Crops (ktn)' : 'Total Crops'
+        'cereals for the production of grain (ktn)': 'Cereals for the production of grain'
+        'dried legumes (ktn)': 'Dried legumes'
+        'potato (ktn)': 'Potato'
+        'sugar beet (ktn)': 'Sugar beet'
+        'forage root crops (ktn)': 'Forage root crops'
+        'industrial plants (ktn)': 'Industrial plants'
+        'vegetables (ktn)': 'Vegetables'
+        'flowers and ornamental plants (ktn)': 'Flowers and ornamental plants'
+        'seedlings (ktn)': 'Seedlings'
+        'alternate forage (ktn)': 'Alternate forage'
+        'seeds (ktn)': 'Seeds'
+        'fallow land (ktn)': 'Fallow land'
+        'agricultural woody crops (ktn)': 'Agricultural woody crops'
+        'vines/grapevines (ktn)': 'Vines/Grapevines'
+        'olive trees (ktn)': 'Olive trees'
+        'citrus fruits (ktn)': 'Citrus fruits'
+        'fruit-bearing (ktn)': 'Fruit-bearing'
+        'nurseries (ktn)': 'Nurseries'
+        'other agricultural woody crops (ktn)': 'Other agricultural woody crops'
+        'agricultural woody crops in greenhouses (ktn)': 'Agricultural woody crops in greenhouses'
+        'family gardens (ktn)': 'Family gardens'
+        'permanent meadows and pastures (ktn)': 'Permanent meadows and pastures'
+        'arboriculture for wood attached to agricultural companies (ktn)': 'Arboriculture for wood attached to agricultural companies'
+        'woods annexed to agricultural companies (ktn)': 'Woods annexed to agricultural companies'
+        'unused agricultural area (ktn)': 'Unused agricultural area'
+        'other surface (ktn)': 'Other surface'
+        'mushrooms in caves, underground or in special buildings (ktn)': 'Mushrooms in caves, underground or in special buildings'
+        'greenhouses (ktn)': 'Greenhouses'
+        'energy crops (ktn)': 'Energy crops'
+        'cattle under one year old (ktn)': 'Cattle under one year old'
+        'cattle under one year old: males (ktn)': 'Cattle under one year old males'
+        'cattle under one year old: females (ktn)': 'Cattle under one year old females'
+        'Cattle from one year to less than two years old: males (ktn)': 'Cattle from one year to less than two years old males'
+        'Cattle from one year to less than two years old: females (ktn)': 'Cattle from one year to less than two years old females'
+        'cattle two years old and older (ktn)': 'Cattle two years old and older'
+        'Cattle two years and older: males (ktn)': 'Cattle two years and older males'
+        'Cattle two years and older: females (ktn)': 'Cattle two years and older females'
+        'Cattle two years and older: breeding heifers (ktn)': 'Cattle two years and older breeding heifers'
+        'Cattle two years and older: heifers for slaughter (ktn)': 'Cattle two years and older heifers for slaughter'
+        'Cattle two years and older: dairy cows (ktn)': 'Cattle two years and older dairy cows'
+        'Cattle aged 2 years and over: other cows (beef and/or working) (ktn)': 'Cattle aged 2 years and over other cows (beef and/or working)'
+        'sheep (ktn)': 'Sheep'
+        'dairy sheep (ktn)': 'Dairy sheep'
+        'non dairy sheep (ktn)': 'Non dairy sheep'
+        'other sheep (ktn)': 'Other sheep'
+        'total buffaloes (ktn)': 'Total buffaloes'
+        'buffalo calves (ktn)': 'Buffalo calves'
+        'bufalloes (ktn)': 'Buffaloes'
+        'other buffaloes (ktn)': 'Other buffaloes'
+        'goats (ktn)': 'Goats'
+        'other goats (ktn)': 'Other goats'
+        'chickens for meat (ktn)': 'Chickens for meat'
+        'egg-laying hens (ktn)': 'Egg-laying hens'
+        'turkeys (ktn)': 'Turkeys'
+        'pharaoh (ktn)': 'Pharaoh'
+        'geese (ktn)': 'Geese'
+        'other poultry (ktn)': 'Other poultry'
+        'ostriches (ktn)': 'Ostriches'
+        'pigs weighing less than 20 kg (ktn)': 'Pigs weighing less than 20 kg'
+        'pigs from 20 kg to less than 50 kg (ktn)': 'Pigs from 20 kg to less than 50 kg'
+        'fattening pigs of 50 kg and more (ktn)': 'Fattening pigs of 50 kg and more'
+        'fattening pigs from 50 kg to less than 80 kg (ktn)': 'Fattening pigs from 50 kg to less than 80 kg'
+        'fattening pigs from 80 kg to less than 110 kg (ktn)': 'Fattening pigs from 80 kg to less than 110 kg'
+        'fattening pigs of 110 kg and more (ktn)': 'Fattening pigs of 110 kg and more'
+        'breeding pigs of 50 kg and more (ktn)': 'Breeding pigs of 50 kg and more'
+        'breeding pigs of 50 kg and more: boars (ktn)': 'Breeding pigs of 50 kg and more boars'
+        'breeding pigs of 50 kg and more: mounted sows (ktn)': 'Breeding pigs of 50 kg and more mounted sows'
+        'breeding pigs of 50 kg and more: other sows (ktn)': 'Breeding pigs of 50 kg and more other sows'
+      FINALHEADSCOLS:
+        - "Total Cow Slurry (no. heads)"
+        - 'cattle under one year old_(no. heads)'
+        - 'cattle under one year old: males_(no. heads)'
+        - 'cattle under one year old: females_(no. heads)'
+        - 'Cattle from one year to less than two years old: males_(no. heads)'
+        - 'cattle two years old and older_(no. heads)'
+        - "Total Cow Manure (no. heads)"
+        - 'Cattle two years and older: males_(no. heads)'
+        - 'Cattle two years and older: females_(no. heads)'
+        - 'Cattle two years and older: breeding heifers_(no. heads)'
+        - 'Cattle two years and older: heifers for slaughter_(no. heads)'
+        - 'Cattle two years and older: dairy cows_(no. heads)'
+        - 'Cattle aged 2 years and over: other cows (beef and/or working)_(no. heads)'
+        - 'sheep_(no. heads)'
+        - 'dairy sheep_(no. heads)'
+        - 'non dairy sheep_(no. heads)'
+        - 'other sheep_(no. heads)'
+        - 'total buffaloes_(no. heads)'
+        - 'buffalo calves_(no. heads)'
+        - 'bufalloes_(no. heads)'
+        - 'other buffaloes_(no. heads)'
+        - 'goats_(no. heads)'
+        - 'other goats_(no. heads)'
+        - 'chickens for meat_(no. heads)'
+        - 'egg-laying hens_(no. heads)'
+        - 'turkeys_(no. heads)'
+        - 'pharaoh_(no. heads)'
+        - 'geese_(no. heads)'
+        - 'other poultry_(no. heads)'
+        - 'ostriches_(no. heads)'
+        - 'pigs weighing less than 20 kg_(no. heads)'
+        - 'pigs from 20 kg to less than 50 kg_(no. heads)'
+        - 'fattening pigs of 50 kg and more_(no. heads)'
+        - 'fattening pigs from 50 kg to less than 80 kg_(no. heads)'
+        - 'fattening pigs from 80 kg to less than 110 kg_(no. heads)'
+        - 'fattening pigs of 110 kg and more_(no. heads)'
+        - 'breeding pigs of 50 kg and more_(no. heads)'
+        - 'breeding pigs of 50 kg and more: boars_(no. heads)'
+        - 'breeding pigs of 50 kg and more: mounted sows_(no. heads)'
+        - 'breeding pigs of 50 kg and more: other sows_(no. heads)'
+
+      totals:
+        - 'cereals for the production of grain (ktn)'
+        - 'dried legumes (ktn)'
+        - 'potato (ktn)'
+        - 'sugar beet (ktn)'
+        - 'forage root crops (ktn)'
+        - 'industrial plants (ktn)'
+        - 'vegetables (ktn)'
+        - 'flowers and ornamental plants (ktn)'
+        - 'seedlings (ktn)'
+        - 'alternate forage (ktn)'
+        - 'seeds (ktn)'
+        - 'fallow land (ktn)'
+        - 'agricultural woody crops (ktn)'
+        - 'vines/grapevines (ktn)'
+        - 'olive trees (ktn)'
+        - 'citrus fruits (ktn)'
+        - 'fruit-bearing (ktn)'
+        - 'nurseries (ktn)'
+        - 'other agricultural woody crops (ktn)'
+        - 'agricultural woody crops in greenhouses (ktn)'
+        - 'family gardens (ktn)'
+        - 'permanent meadows and pastures (ktn)'
+        - 'arboriculture for wood attached to agricultural companies (ktn)'
+        - 'woods annexed to agricultural companies (ktn)'
+        - 'unused agricultural area (ktn)'
+        - 'other surface (ktn)'
+        - 'mushrooms in caves, underground or in special buildings (ktn)'
+        - 'greenhouses (ktn)'
+        - 'energy crops (ktn)'
+        - 'cattle under one year old (ktn)'
+        - 'Cattle from one year to less than two years old: males (ktn)'
+        - 'Cattle from one year to less than two years old: females (ktn)'
+        - 'cattle two years old and older (ktn)'
+
+        - 'Cattle two years and older: breeding heifers (ktn)'
+
+        - 'Cattle aged 2 years and over: other cows (beef and/or working) (ktn)'
+        - 'sheep (ktn)'
+        - 'dairy sheep (ktn)'
+        - 'non dairy sheep (ktn)'
+        - 'other sheep (ktn)'
+        - 'total buffaloes (ktn)'
+        - 'goats (ktn)'
+        - 'other goats (ktn)'
+        - 'chickens for meat (ktn)'
+        - 'egg-laying hens (ktn)'
+        - 'turkeys (ktn)'
+        - 'pharaoh (ktn)'
+        - 'geese (ktn)'
+        - 'other poultry (ktn)'
+        - 'ostriches (ktn)'
+        - 'pigs weighing less than 20 kg (ktn)'
+        - 'pigs from 20 kg to less than 50 kg (ktn)'
+        - 'fattening pigs of 50 kg and more (ktn)'
+        - 'breeding pigs of 50 kg and more (ktn)'
