@@ -190,13 +190,13 @@ def estimate_cr_nr():
             )
 
         # CR-specific: plant + competitor diet over the 8 diet feedstocks.
-        # Each feedstock is in/out of the diet (1/0), as in the notebook `sites` diets.
+        # Editable NUMERIC values (the notebook diet dict uses numbers; 1 was just an example).
         diet_plant: dict = {}
         diet_competitors: dict = {}
         if MODULE_CR in modules:
-            st.markdown("**CR — diet** (tick the feedstocks in each diet)")
+            st.markdown("**CR — diet** (enter a value per feedstock; 0 = not in the diet)")
             diet_init = pd.DataFrame(
-                {"feedstock": DIET_KEYS, "plant": [True] * len(DIET_KEYS), "competitor": [True] * len(DIET_KEYS)}
+                {"feedstock": DIET_KEYS, "plant": [1.0] * len(DIET_KEYS), "competitor": [1.0] * len(DIET_KEYS)}
             )
             diet_edited = st.data_editor(
                 diet_init,
@@ -204,14 +204,22 @@ def estimate_cr_nr():
                 use_container_width=True,
                 disabled=["feedstock"],
                 column_config={
-                    "plant": st.column_config.CheckboxColumn("Plant diet"),
-                    "competitor": st.column_config.CheckboxColumn("Competitor diet"),
+                    "plant": st.column_config.NumberColumn("Plant diet", min_value=0.0, step=1.0, format="%.2f"),
+                    "competitor": st.column_config.NumberColumn(
+                        "Competitor diet", min_value=0.0, step=1.0, format="%.2f"
+                    ),
                 },
                 key="diet_editor",
             )
-            # Keep only ticked feedstocks, encoded as 1 (matching the notebook diet dict).
-            diet_plant = {r["feedstock"]: 1 for _, r in diet_edited.iterrows() if r["plant"]}
-            diet_competitors = {r["feedstock"]: 1 for _, r in diet_edited.iterrows() if r["competitor"]}
+            # Keep feedstocks with a value > 0, mapped to the number entered.
+            diet_plant = {
+                r["feedstock"]: float(r["plant"]) for _, r in diet_edited.iterrows() if float(r["plant"] or 0) > 0
+            }
+            diet_competitors = {
+                r["feedstock"]: float(r["competitor"])
+                for _, r in diet_edited.iterrows()
+                if float(r["competitor"] or 0) > 0
+            }
 
         # NR-specific.
         n_produced = None
